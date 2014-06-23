@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html { overflow-x: hidden; overflow-y: hidden; }
+
+body{
+background-color: #fff;
+font-family:Helvetica, Arial, sans-serif;
+position: relative;
+font-size:35px; 
+color:#000;
+margin: 0;
+
+
+}
+
+#infoBox {
+  height: 262px;
+  width: 180px;
+  background: #ff0161;
+  z-index: 31;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+-moz-box-shadow:    4px 4px 10px rgba(0, 0, 0, 1);
+box-shadow:         4px 4px 10px rgba(0, 0, 0, 1);
+}
+
+.open{
+}
+
+.closed {
+	display:none;
+}
+
+
+#infoBox h1 {
+  font-family: 'Allan', cursive;
+  font-weight: 400;
+  font-size: 29px;
+  letter-spacing:1px;
+  color: #fff; 
+  margin: 0;
+}
+
+#closeInfoBox{
+  height: 20px;
+  width: 20px;
+  background: url(thumbs/close.jpg);
+  z-index: 32;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+-moz-box-shadow:    1px 1px 3px rgba(0, 0, 0, 1);
+box-shadow:         1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+#openInfoBox{
+  height: 20px;
+  width: 20px;
+  background: url(thumbs/open.jpg);
+  z-index: 32;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+-moz-box-shadow:    1px 1px 3px rgba(0, 0, 0, 1);
+box-shadow:         1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+#catMenu {
+  border-top:2px solid #FFF;
+  border-bottom:2px solid #FFF;
+  height: 149px;
+}
+
+#buttonIntro {
+  height: 50px;
+  width: 50px;
+  float:left;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-family: 'Allan', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing:1px;
+  color: #fff;  
+}
+
+#buttonIntro img {
+  margin-top: 5px;
+}
+#buttonMeme {
+  height: 48px;
+  width: 48px;
+  float:left;
+  margin-top: 15px;
+  margin-right: 15px;
+  background: url(thumbs/thumb_memes.jpg);
+  border: 1px solid #ff6aa2;
+  cursor: pointer;
+}
+#buttonLilbub {
+  height: 48px;
+  width: 48px;
+  float:left;
+  margin-top: 15px;
+  background: url(thumbs/thumb_lilbub.jpg);
+  border: 1px solid #ff6aa2;
+  cursor: pointer;
+}
+#buttonGrumpy {
+  height: 48px;
+  width: 48px;
+  float:left;
+  margin-top: 15px;
+  margin-right: 15px;
+  background: url(thumbs/thumb_grumpy.jpg);
+  border: 1px solid #ff6aa2;
+  cursor: pointer;
+}
+#buttonColonel {
+  height: 48px;
+  width: 48px;
+  float:left;
+  margin-top: 15px;
+  margin-right: 15px;
+  background: url(thumbs/thumb_colonel.jpg);
+  border: 1px solid #ff6aa2;
+  cursor: pointer;
+}
+#buttonMaru {
+  height: 48px;
+  width: 48px;
+  float:left;
+  margin-top: 15px;
+  background: url(thumbs/thumb_maru.jpg);
+  border: 1px solid #ff6aa2;
+  cursor: pointer;
+}
+
+#infoBox h2 {
+  font-family: 'Allan', cursive;
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing:1px;
+  color: #fff; 
+  margin: 20px 0 10px 0;
+}
+
+#infoBox h2 a {
+  color: #000;
+}
+
+.addthis_button_facebook_like {
+	float: left;
+}
+
+.addthis_button_tweet {
+	float: left;
+	width: 40px !important;
+}
+
+/* common kaleidoscope styles */
+.kal_main{
+overflow:hidden;
+width:1280px;
+height:1280px;
+margin:auto;
+background: #fff; 
+
+}
+
+.kal_cont{
+position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+margin:auto;
+overflow:hidden;
+
+}
+
+.kal_cont .ks{
+-webkit-transform-origin:right top;
+-moz-transform-origin:right top;
+-o-transform-origin:right top;
+transform-origin:right top;
+width:100%;
+height:100%;
+position:absolute;
+/* top:25%;  */
+/*top: 186.5px;*/
+right:50%;
+z-index:10;
+overflow:hidden;
+}
+.kal_cont .ksc{
+height:100%;
+width:100%;
+-webkit-transform:rotate(30deg);
+-moz-transform:rotate(30deg);
+-o-transform:rotate(30deg);
+transform:rotate(30deg);
+position:relative;
+-webkit-transform-origin:left top;
+-moz-transform-origin:left top;
+-o-transform-origin:left top;
+transform-origin:left top;
+left:100%;top:0;
+background-image:url(9omzx.gif);
+background-repeat:repeat;
+}
+
+/* styles for each sector */
+.kal_cont .s1 {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+.kal_cont .s2 {
+  -webkit-transform: rotate(30deg) matrix(-1,0,0,1,0,0);
+  -moz-transform: rotate(30deg) matrix(-1,0,0,1,0,0);
+  -o-transform: rotate(30deg) matrix(-1,0,0,1,0,0);
+  transform: rotate(30deg) matrix(-1,0,0,1,0,0);
+}
+.kal_cont .s3 {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.kal_cont .s4 {
+  -webkit-transform: rotate(90deg) matrix(-1,0,0,1,0,0);
+  -moz-transform: rotate(90deg) matrix(-1,0,0,1,0,0);
+  -o-transform: rotate(90deg) matrix(-1,0,0,1,0,0);
+  transform: rotate(90deg) matrix(-1,0,0,1,0,0);
+}
+.kal_cont .s5 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kal_cont .s6 {
+  -webkit-transform: rotate(150deg) matrix(-1,0,0,1,0,0);
+  -moz-transform: rotate(150deg) matrix(-1,0,0,1,0,0);
+  -o-transform: rotate(150deg) matrix(-1,0,0,1,0,0);
+  transform: rotate(150deg) matrix(-1,0,0,1,0,0);
+}
+.kal_cont .s7 {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.kal_cont .s8 {
+  -webkit-transform: rotate(210deg) matrix(-1,0,0,1,0,0);
+  -moz-transform: rotate(210deg) matrix(-1,0,0,1,0,0);
+  -o-transform: rotate(210deg) matrix(-1,0,0,1,0,0);
+  transform: rotate(210deg) matrix(-1,0,0,1,0,0);
+}
+.kal_cont .s9 {
+  -webkit-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+.kal_cont .s10 {
+  -webkit-transform: rotate(270deg) matrix(-1,0,0,1,0,0);
+  -moz-transform: rotate(270deg) matrix(-1,0,0,1,0,0);
+  -o-transform: rotate(270deg) matrix(-1,0,0,1,0,0);
+  transform: rotate(270deg) matrix(-1,0,0,1,0,0);
+}
+.kal_cont .s11 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kal_cont .s12 {
+  -webkit-transform: rotate(330deg) matrix(-1,0,0,1,0,0);
+  -moz-transform: rotate(330deg) matrix(-1,0,0,1,0,0);
+  -o-transform: rotate(330deg) matrix(-1,0,0,1,0,0);
+  transform: rotate(330deg) matrix(-1,0,0,1,0,0);
+}  

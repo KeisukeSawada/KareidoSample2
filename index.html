@@ -1,0 +1,112 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="Let's reflect on seeing life differently.">
+<meta property="og:image" content="background_lilbub.jpg" />	
+<link href="css" rel="stylesheet" type="text/css">
+<script src="jquery.min.js"></script>
+<title>ARCHIBALD BUTLER'S KALEIDOSCOPE!</title>
+</head>
+
+<style>html {
+  background: black;
+  min-height: 100%;
+  color: #dadadf;
+  font-weight: 100;
+  font-family: Helvetica Neue, Segoe UI, sans-serif;
+}
+
+.holder {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -256px;
+  transform: rotateZ(0);
+}
+.kaleido {
+  width: 300px;
+  height: 172px;
+  position: relative;
+  padding-top: 174px;
+}
+.kaleido:nth-child(3) {
+  top: -519px;
+  left: 300px;
+}
+
+.tile {
+  /* 86.6% = ratio of height to width of equilateral triangle */
+  -webkit-clip-path: polygon(50% 0,0 86.6%, 100% 86.6%, 50% 0);
+  clip-path: url(#equitri);
+  height: 200px;
+  width: 200px;
+  /*background: Eurl(http://24.media.tumblr.com/tumblr_mdpt9pqwFb1qhb0iso1_1280.jpg);
+    */
+  background-size: cover;
+  position: absolute;
+  transform-origin: top center;
+  animation: bgpos 20s infinite;
+  overflow: hidden;
+}
+
+@keyframes bgpos {
+  0%,100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -1024px 0;
+  }
+}
+
+.tile:nth-child(1) {
+
+}
+.tile:nth-child(2) {
+  transform: rotate(60deg) scaleX(-1);
+}
+.tile:nth-child(3) {
+  transform: rotate(120deg);
+}
+.tile:nth-child(4) {
+  transform: rotate(180deg) scaleX(-1);
+}
+.tile:nth-child(5) {
+  transform: rotate(240deg);
+}
+.tile:nth-child(6) {
+  transform: rotate(-60deg) scaleX(-1);
+}
+
+.description {
+  width: 240px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-align: right;
+}
+h1 {
+  font-weight: 200;
+  text-shadow: 1px 0 0 #ccc;
+  line-height: 24px;
+}
+
+p {
+  line-height: 18px;
+}
+
+a {
+  color: #9a9a9a; 
+}</style></head><body>
+<div class="holder">
+  <div class="kaleido">
+    <div class="tile"><video src="movie2.mp4" autoplay="autoplay" width="600" /></div>
+  </div>
+
+</div>
+
+
+
+</body></html>
